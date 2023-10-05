@@ -1,0 +1,84 @@
+section {
+  padding: 0 14%;
+}
+@media screen and (max-width: 1315px) {
+  section {
+    padding: 24px 4%;
+    transition: 0.3s;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-image: url(../../assets/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.main .main-img img {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  animation-name: slide;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@media screen and (max-width: 1195px) {
+  .main .main-img img {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    transition: 0.3s;
+  }
+}
+.main .arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 12%;
+  bottom: 40px;
+}
+@media screen and (max-width: 1195px) {
+  .main .arrow {
+    display: none;
+  }
+}
+.main .arrow a {
+  color: #ebf0ff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.main .arrow a span i {
+  color: #ebf0ff;
+  border: 2px solid #ebf0ff;
+  padding: 3px 3px;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: all 0.42s;
+}
+.main .arrow a span i:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.gradient-text-orange {
+  background: linear-gradient(315deg, #fb8c00 0%, #e53925 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}/*# sourceMappingURL=Main.css.map */
